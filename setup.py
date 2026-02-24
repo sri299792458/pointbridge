@@ -7,7 +7,9 @@ from setuptools import setup, find_packages
 setup(
     name="pointbridge",
     packages=[
-        package for package in find_packages() if package.startswith("pointbridge")
+        package
+        for package in find_packages()
+        if package.startswith("point_bridge") or package.startswith("ip")
     ],
     install_requires=[],
     eager_resources=['*'],
